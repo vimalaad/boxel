@@ -107,7 +107,7 @@ export async function synapseStart(
   console.log(`Starting synapse with config dir ${synCfg.configDir}...`);
   await dockerCreateNetwork({ networkName: 'boxel' });
   const synapseId = await dockerRun({
-    image: 'matrixdotorg/synapse:develop',
+    image: 'a6c3e870a909',
     containerName: `boxel-synapse`,
     dockerParams: [
       '--rm',
